@@ -8,6 +8,8 @@
         <td>#</td>
         <td>Title</td>
         <td>Description</td>
+        <td></td>
+        <td>Last Update Time</td>
       </tr>
     </thead>
     <tbody>
@@ -21,6 +23,7 @@
               <%= link_to("Delete", group_path(group),    class: "btn btn-sm btn-default", 
                           method: :delete, data: { confirm: "Are you sure?" } )%>
           </td>
+          <td> <%= group.updated_at %></td>
         </tr>
       <% end %>
     </tbody>
